@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.spriv">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+
+
+    <application
+        android:name=".SprivApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme">
+        <activity android:name=".activity.QRScannerActivity"
+            android:label="@string/scan_qr_add_user"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+
+        </activity>
+        <activity
+            android:name=".activity.BootstrapActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="spriv" />
+                <!-- data android:scheme="http" android:host="spriv.com" android:pathPrefix="/spriv" -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AccountsActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_none"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/welcome_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PatentsActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/patents_title"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/about_title"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AddAccountActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_activity_add_account"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.VisitWebActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_privacy_policy"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CheckLoginActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_activity_check_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".activity.CheckVerificationActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_activity_check_verification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".activity.TOTPActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_activity_totp"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.LoginsActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_activity_auth_logins"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.TipsActivity"
+            android:label="@string/title_activity_tips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NextStepsActivity"
+            android:label="@string/title_activity_next_steps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Automatic2FAActivity"
+            android:label="@string/title_activity_automatic_2FA"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <service
+        android:name=".service.ServiceNoDelay"
+        android:enabled="true" />
+
+        <service
+            android:name=".service.GpsService"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".service.SensorRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="ac.in.ActivityRecognition.RestartSensor" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

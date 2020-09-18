@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:spriv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.spriv.AddAccountActivity" >
+
+    <item android:id="@+id/action_cancel"
+          android:icon="@drawable/ic_remove"
+          android:title="@string/action_cancel" 
+          spriv:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/list_item_horizontal_margin"
+    android:paddingRight="@dimen/list_item_horizontal_margin" 
+    android:paddingBottom="@dimen/list_item_vertical_margin"
+    android:paddingTop="@dimen/list_item_vertical_margin">
+ 
+ <ImageView
+	     android:id="@+id/login_remove_image"
+	     android:visibility="visible"
+	     android:layout_width="40dp"
+	     android:layout_height="40dp"
+	     android:padding="8dp"
+	     android:layout_alignParentRight="true"
+	     android:layout_centerVertical="true"
+	     android:src="@drawable/ic_action_discard_red" />
+	<TextView 
+	     android:id="@+id/address_text"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="@android:color/transparent"
+	     android:layout_toLeftOf="@id/account_remove_image"
+	     android:layout_marginTop="8dp"
+	     android:textColor="#444444"
+	     android:textSize="@dimen/large_text_size"
+	     android:text="5 AV 13 ST NY"/>
+		<TextView 
+	     android:id="@+id/service_name_text"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="@android:color/transparent"
+	     android:layout_toLeftOf="@id/account_remove_image"
+	     android:layout_below="@id/address_text"
+	     android:layout_marginTop="8dp"
+	     android:textColor="#444444"
+	     android:textSize="@dimen/medium_text_size"
+	     android:text="ofirdalik@yahoo.com"/>
+		<TextView 
+	     android:id="@+id/time_text"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="@android:color/transparent"
+	     android:layout_marginTop="8dp"
+	     android:layout_toLeftOf="@id/account_remove_image"
+	     android:layout_below="@id/service_name_text"
+	     android:textColor="#444444"
+	     android:textSize="@dimen/medium_text_size"
+	     android:text="18:20 May 2 2014"/>
+</RelativeLayout>

@@ -1,0 +1,523 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.spriv"
+4    android:versionCode="24"
+5    android:versionName="1.3.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:6:5-80
+11-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:6:22-77
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:7:5-81
+12-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:8:5-67
+13-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:8:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:9:5-79
+14-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:9:22-76
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:10:5-68
+15-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:10:22-65
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+16-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:11:5-76
+16-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:11:22-73
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:12:5-65
+17-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:12:22-62
+18    <uses-permission android:name="android.permission.READ_LOGS" />
+18-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:13:5-68
+18-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:13:22-65
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:14:5-78
+19-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:14:22-76
+20    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+20-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:16:5-84
+20-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:16:22-82
+21    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+21-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fe76d06796ac3c0babe3fa806bc35c65\installreferrer-1.1.2\AndroidManifest.xml:9:5-110
+21-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fe76d06796ac3c0babe3fa806bc35c65\installreferrer-1.1.2\AndroidManifest.xml:9:22-107
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+22-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:26:5-82
+22-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:26:22-79
+23
+24    <application
+24-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:20:5-168:19
+25        android:name="com.spriv.SprivApp"
+25-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:21:9-33
+26        android:allowBackup="true"
+26-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:22:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\7c70e076a5cbc84dede41079d50364ab\core-1.0.1\AndroidManifest.xml:22:18-86
+28        android:debuggable="true"
+29        android:icon="@drawable/ic_launcher"
+29-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:23:9-45
+30        android:label="@string/app_name"
+30-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:24:9-41
+31        android:testOnly="true"
+32        android:theme="@style/CustomActionBarTheme" >
+32-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:25:9-52
+33        <activity
+33-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:26:9-33:20
+34            android:name="com.spriv.activity.QRScannerActivity"
+34-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:26:19-61
+35            android:label="@string/scan_qr_add_user" >
+35-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:27:13-53
+36            <meta-data
+36-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:29:13-31:71
+37                android:name="android.support.PARENT_ACTIVITY"
+37-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:30:17-63
+38                android:value="com.spriv.activity.AccountsActivity" />
+38-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:31:17-68
+39        </activity>
+40        <activity
+40-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:34:9-53:20
+41            android:name="com.spriv.activity.BootstrapActivity"
+41-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:35:13-55
+42            android:exported="true"
+42-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:36:13-36
+43            android:label="@string/app_name"
+43-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:37:13-45
+44            android:screenOrientation="portrait" >
+44-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:38:13-49
+45            <intent-filter>
+45-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:39:13-43:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:40:17-69
+46-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:40:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:42:17-77
+48-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:42:27-74
+49            </intent-filter>
+50            <intent-filter>
+50-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:44:13-52:29
+51                <action android:name="android.intent.action.VIEW" />
+51-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:45:17-69
+51-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:45:25-66
+52
+53                <category android:name="android.intent.category.DEFAULT" />
+53-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:47:17-76
+53-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:47:27-73
+54                <category android:name="android.intent.category.BROWSABLE" />
+54-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:48:17-78
+54-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:48:27-75
+55
+56                <data android:scheme="spriv" />
+56-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:50:17-48
+56-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:50:23-45
+57                <!-- data android:scheme="http" android:host="spriv.com" android:pathPrefix="/spriv" -->
+58            </intent-filter>
+59        </activity>
+60        <activity
+60-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:54:9-58:52
+61            android:name="com.spriv.activity.AccountsActivity"
+61-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:55:13-54
+62            android:icon="@drawable/logo_icon_white"
+62-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:56:13-53
+63            android:label="@string/title_none"
+63-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:57:13-47
+64            android:screenOrientation="portrait" />
+64-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:58:13-49
+65        <activity
+65-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:59:9-63:52
+66            android:name="com.spriv.activity.WelcomeActivity"
+66-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:60:13-53
+67            android:icon="@drawable/logo_icon_white"
+67-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:61:13-53
+68            android:label="@string/welcome_title"
+68-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:62:13-50
+69            android:screenOrientation="portrait" />
+69-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:63:13-49
+70        <activity
+70-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:64:9-72:20
+71            android:name="com.spriv.activity.PatentsActivity"
+71-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:65:13-53
+72            android:icon="@drawable/logo_icon_white"
+72-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:66:13-53
+73            android:label="@string/patents_title"
+73-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:67:13-50
+74            android:screenOrientation="portrait" >
+74-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:68:13-49
+75            <meta-data
+75-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:29:13-31:71
+76                android:name="android.support.PARENT_ACTIVITY"
+76-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:30:17-63
+77                android:value="com.spriv.activity.AccountsActivity" />
+77-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:31:17-68
+78        </activity>
+79        <activity
+79-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:73:9-81:20
+80            android:name="com.spriv.activity.AboutActivity"
+80-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:74:13-51
+81            android:icon="@drawable/logo_icon_white"
+81-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:75:13-53
+82            android:label="@string/about_title"
+82-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:76:13-48
+83            android:screenOrientation="portrait" >
+83-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:77:13-49
+84            <meta-data
+84-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:29:13-31:71
+85                android:name="android.support.PARENT_ACTIVITY"
+85-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:30:17-63
+86                android:value="com.spriv.activity.AccountsActivity" />
+86-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:31:17-68
+87        </activity>
+88        <activity
+88-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:82:9-90:20
+89            android:name="com.spriv.activity.AddAccountActivity"
+89-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:83:13-56
+90            android:icon="@drawable/logo_icon_white"
+90-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:84:13-53
+91            android:label="@string/title_activity_add_account"
+91-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:85:13-63
+92            android:screenOrientation="portrait" >
+92-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:86:13-49
+93            <meta-data
+93-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:29:13-31:71
+94                android:name="android.support.PARENT_ACTIVITY"
+94-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:30:17-63
+95                android:value="com.spriv.activity.AccountsActivity" />
+95-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:31:17-68
+96        </activity>
+97        <activity
+97-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:91:9-99:20
+98            android:name="com.spriv.activity.VisitWebActivity"
+98-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:92:13-54
+99            android:icon="@drawable/logo_icon_white"
+99-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:93:13-53
+100            android:label="@string/title_privacy_policy"
+100-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:94:13-57
+101            android:screenOrientation="portrait" >
+101-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:95:13-49
+102            <meta-data
+102-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:29:13-31:71
+103                android:name="android.support.PARENT_ACTIVITY"
+103-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:30:17-63
+104                android:value="com.spriv.activity.AccountsActivity" />
+104-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:31:17-68
+105        </activity>
+106        <activity
+106-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:100:9-105:58
+107            android:name="com.spriv.activity.CheckLoginActivity"
+107-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:101:13-56
+108            android:icon="@drawable/logo_icon_white"
+108-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:102:13-53
+109            android:label="@string/title_activity_check_login"
+109-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:103:13-63
+110            android:screenOrientation="portrait"
+110-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:104:13-49
+111            android:theme="@style/AppThemeNoActionBar" />
+111-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:105:13-55
+112        <activity
+112-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:106:9-111:58
+113            android:name="com.spriv.activity.CheckVerificationActivity"
+113-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:107:13-63
+114            android:icon="@drawable/logo_icon_white"
+114-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:108:13-53
+115            android:label="@string/title_activity_check_verification"
+115-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:109:13-70
+116            android:screenOrientation="portrait"
+116-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:110:13-49
+117            android:theme="@style/AppThemeNoActionBar" />
+117-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:111:13-55
+118        <activity
+118-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:112:9-120:20
+119            android:name="com.spriv.activity.TOTPActivity"
+119-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:113:13-50
+120            android:icon="@drawable/logo_icon_white"
+120-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:114:13-53
+121            android:label="@string/title_activity_totp"
+121-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:115:13-56
+122            android:screenOrientation="portrait" >
+122-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:116:13-49
+123            <meta-data
+123-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:29:13-31:71
+124                android:name="android.support.PARENT_ACTIVITY"
+124-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:30:17-63
+125                android:value="com.spriv.activity.AccountsActivity" />
+125-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:31:17-68
+126        </activity>
+127        <activity
+127-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:121:9-129:20
+128            android:name="com.spriv.activity.LoginsActivity"
+128-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:122:13-52
+129            android:icon="@drawable/logo_icon_white"
+129-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:123:13-53
+130            android:label="@string/title_activity_auth_logins"
+130-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:124:13-63
+131            android:screenOrientation="portrait" >
+131-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:125:13-49
+132            <meta-data
+132-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:29:13-31:71
+133                android:name="android.support.PARENT_ACTIVITY"
+133-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:30:17-63
+134                android:value="com.spriv.activity.AccountsActivity" />
+134-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:31:17-68
+135        </activity>
+136        <activity
+136-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:130:9-133:52
+137            android:name="com.spriv.activity.TipsActivity"
+137-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:131:13-50
+138            android:label="@string/title_activity_tips"
+138-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:132:13-56
+139            android:screenOrientation="portrait" />
+139-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:133:13-49
+140        <activity
+140-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:134:9-137:52
+141            android:name="com.spriv.activity.NextStepsActivity"
+141-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:135:13-55
+142            android:label="@string/title_activity_next_steps"
+142-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:136:13-62
+143            android:screenOrientation="portrait" />
+143-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:137:13-49
+144        <activity
+144-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:138:9-141:52
+145            android:name="com.spriv.activity.Automatic2FAActivity"
+145-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:139:13-58
+146            android:label="@string/title_activity_automatic_2FA"
+146-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:140:13-65
+147            android:screenOrientation="portrait" />
+147-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:141:13-49
+148
+149        <service android:name="com.spriv.firebase.MyFirebaseMessagingService" >
+149-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:143:9-147:19
+149-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:143:18-69
+150            <intent-filter>
+150-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:144:13-146:29
+151                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+151-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:145:17-78
+151-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:145:25-75
+152            </intent-filter>
+153        </service>
+154
+155        <uses-library
+155-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:148:9-88
+156            android:name="org.apache.http.legacy"
+156-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:148:23-60
+157            android:required="false" />
+157-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:148:61-85
+158
+159        <service
+159-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:150:9-152:34
+160            android:name="com.spriv.service.ServiceNoDelay"
+160-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:151:9-47
+161            android:enabled="true" />
+161-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:152:9-31
+162        <service
+162-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:154:9-157:39
+163            android:name="com.spriv.service.GpsService"
+163-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:155:13-47
+164            android:enabled="true"
+164-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:156:13-35
+165            android:exported="true" />
+165-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:157:13-36
+166
+167        <receiver
+167-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:158:9-166:20
+168            android:name="com.spriv.service.SensorRestarterBroadcastReceiver"
+168-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:159:13-69
+169            android:enabled="true"
+169-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:160:13-35
+170            android:exported="true"
+170-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:161:13-36
+171            android:label="RestartServiceWhenStopped" >
+171-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:162:13-54
+172            <intent-filter>
+172-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:163:13-165:29
+173                <action android:name="ac.in.ActivityRecognition.RestartSensor" />
+173-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:164:17-82
+173-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:164:25-79
+174            </intent-filter>
+175        </receiver>
+176
+177        <!--
+178             FirebaseMessagingService performs security checks at runtime,
+179             but set to not exported to explicitly avoid allowing another app to call it.
+180        -->
+181        <service
+181-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd161fe4efac8aecf8eebe90f73b1259\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:28:9-34:19
+182            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+182-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd161fe4efac8aecf8eebe90f73b1259\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:29:13-82
+183            android:exported="false" >
+183-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd161fe4efac8aecf8eebe90f73b1259\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:30:13-37
+184            <intent-filter android:priority="-500" >
+184-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:144:13-146:29
+185                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+185-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:145:17-78
+185-->F:\FreelanceProjects\20200915android\com.spriv_20_6-14\com.spriv\app\src\main\AndroidManifest.xml:145:25-75
+186            </intent-filter>
+187        </service>
+188        <service
+188-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd161fe4efac8aecf8eebe90f73b1259\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:35:9-41:19
+189            android:name="com.google.firebase.components.ComponentDiscoveryService"
+189-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd161fe4efac8aecf8eebe90f73b1259\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:36:13-84
+190            android:directBootAware="true"
+190-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\f2ca873aaf2e53f888681ed2b38882b6\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+191            android:exported="false" >
+191-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd161fe4efac8aecf8eebe90f73b1259\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:37:13-37
+192            <meta-data
+192-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd161fe4efac8aecf8eebe90f73b1259\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:38:13-40:85
+193                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+193-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd161fe4efac8aecf8eebe90f73b1259\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:39:17-119
+194                android:value="com.google.firebase.components.ComponentRegistrar" />
+194-->[com.google.firebase:firebase-messaging:20.1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd161fe4efac8aecf8eebe90f73b1259\jetified-firebase-messaging-20.1.2\AndroidManifest.xml:40:17-82
+195            <meta-data
+195-->[com.google.firebase:firebase-crashlytics:17.0.0-beta01] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\64db066444a28082602fa2f8ead5dff1\firebase-crashlytics-17.0.0-beta01\AndroidManifest.xml:16:13-18:85
+196                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+196-->[com.google.firebase:firebase-crashlytics:17.0.0-beta01] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\64db066444a28082602fa2f8ead5dff1\firebase-crashlytics-17.0.0-beta01\AndroidManifest.xml:17:17-115
+197                android:value="com.google.firebase.components.ComponentRegistrar" />
+197-->[com.google.firebase:firebase-crashlytics:17.0.0-beta01] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\64db066444a28082602fa2f8ead5dff1\firebase-crashlytics-17.0.0-beta01\AndroidManifest.xml:18:17-82
+198            <meta-data
+198-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e9db6e1ea44ddc308c94eaa5e5cfee6d\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+199                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+199-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e9db6e1ea44ddc308c94eaa5e5cfee6d\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+200                android:value="com.google.firebase.components.ComponentRegistrar" />
+200-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e9db6e1ea44ddc308c94eaa5e5cfee6d\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+201            <meta-data
+201-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\dd98012e3a38782658de9cc401f852b4\play-services-measurement-api-17.2.3\AndroidManifest.xml:30:13-32:85
+202                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+202-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\dd98012e3a38782658de9cc401f852b4\play-services-measurement-api-17.2.3\AndroidManifest.xml:31:17-139
+203                android:value="com.google.firebase.components.ComponentRegistrar" />
+203-->[com.google.android.gms:play-services-measurement-api:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\dd98012e3a38782658de9cc401f852b4\play-services-measurement-api-17.2.3\AndroidManifest.xml:32:17-82
+204            <meta-data
+204-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:32:13-34:85
+205                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+205-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:33:17-96
+206                android:value="com.google.firebase.components.ComponentRegistrar" />
+206-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:34:17-82
+207            <meta-data
+207-->[com.google.firebase:firebase-installations:16.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6e3cdfad71be2d52060f6e198addcc13\firebase-installations-16.0.0\AndroidManifest.xml:17:13-19:85
+208                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+208-->[com.google.firebase:firebase-installations:16.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6e3cdfad71be2d52060f6e198addcc13\firebase-installations-16.0.0\AndroidManifest.xml:18:17-127
+209                android:value="com.google.firebase.components.ComponentRegistrar" />
+209-->[com.google.firebase:firebase-installations:16.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6e3cdfad71be2d52060f6e198addcc13\firebase-installations-16.0.0\AndroidManifest.xml:19:17-82
+210        </service>
+211
+212        <receiver
+212-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:37:9-44:20
+213            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+213-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:38:13-78
+214            android:exported="true"
+214-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:39:13-36
+215            android:permission="com.google.android.c2dm.permission.SEND" >
+215-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:40:13-73
+216            <intent-filter>
+216-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:41:13-43:29
+217                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+217-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:42:17-81
+217-->[com.google.firebase:firebase-iid:20.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5fb4ca5e1e8e553b5a1ff3c761009d23\firebase-iid-20.1.1\AndroidManifest.xml:42:25-78
+218            </intent-filter>
+219        </receiver>
+220
+221        <provider
+221-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\f2ca873aaf2e53f888681ed2b38882b6\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+222            android:name="com.google.firebase.provider.FirebaseInitProvider"
+222-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\f2ca873aaf2e53f888681ed2b38882b6\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+223            android:authorities="com.spriv.firebaseinitprovider"
+223-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\f2ca873aaf2e53f888681ed2b38882b6\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+224            android:exported="false"
+224-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\f2ca873aaf2e53f888681ed2b38882b6\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+225            android:initOrder="100" />
+225-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\f2ca873aaf2e53f888681ed2b38882b6\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+226
+227        <activity
+227-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a80a24eccd00ff98e1d294b19a0abae2\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+228            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+228-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a80a24eccd00ff98e1d294b19a0abae2\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+229            android:exported="false"
+229-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a80a24eccd00ff98e1d294b19a0abae2\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+230            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+230-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a80a24eccd00ff98e1d294b19a0abae2\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+231
+232        <receiver
+232-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:29:9-33:20
+233            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+233-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:30:13-85
+234            android:enabled="true"
+234-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:31:13-35
+235            android:exported="false" >
+235-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:32:13-37
+236        </receiver>
+237        <receiver
+237-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:34:9-42:20
+238            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+238-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:35:13-100
+239            android:enabled="true"
+239-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:36:13-35
+240            android:exported="true"
+240-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:37:13-36
+241            android:permission="android.permission.INSTALL_PACKAGES" >
+241-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:38:13-69
+242            <intent-filter>
+242-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:39:13-41:29
+243                <action android:name="com.android.vending.INSTALL_REFERRER" />
+243-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:40:17-79
+243-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:40:25-76
+244            </intent-filter>
+245        </receiver>
+246
+247        <service
+247-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:44:9-47:40
+248            android:name="com.google.android.gms.measurement.AppMeasurementService"
+248-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:45:13-84
+249            android:enabled="true"
+249-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:46:13-35
+250            android:exported="false" />
+250-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:47:13-37
+251        <service
+251-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:48:9-52:72
+252            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+252-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:49:13-87
+253            android:enabled="true"
+253-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:50:13-35
+254            android:exported="false"
+254-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:51:13-37
+255            android:permission="android.permission.BIND_JOB_SERVICE" />
+255-->[com.google.android.gms:play-services-measurement:17.2.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\293eb5a2ed01d5d76504110f70eedc8e\play-services-measurement-17.2.3\AndroidManifest.xml:52:13-69
+256
+257        <meta-data
+257-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1329fa819dbb1298b8fbd5d5aa9b9ca0\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+258            android:name="com.google.android.gms.version"
+258-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1329fa819dbb1298b8fbd5d5aa9b9ca0\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+259            android:value="@integer/google_play_services_version" />
+259-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1329fa819dbb1298b8fbd5d5aa9b9ca0\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+260
+261        <service
+261-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cd03a52e417a1c4dc1e59122aebe5c87\transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+262            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+262-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cd03a52e417a1c4dc1e59122aebe5c87\transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+263            android:exported="false" >
+263-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cd03a52e417a1c4dc1e59122aebe5c87\transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+264            <meta-data
+264-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cd03a52e417a1c4dc1e59122aebe5c87\transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+265                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+265-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cd03a52e417a1c4dc1e59122aebe5c87\transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+266                android:value="cct" />
+266-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\cd03a52e417a1c4dc1e59122aebe5c87\transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+267        </service>
+268        <service
+268-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\990d6f41072703fa727cf9fff511b567\transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+269            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+269-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\990d6f41072703fa727cf9fff511b567\transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+270            android:exported="false"
+270-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\990d6f41072703fa727cf9fff511b567\transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+271            android:permission="android.permission.BIND_JOB_SERVICE" >
+271-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\990d6f41072703fa727cf9fff511b567\transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+272        </service>
+273
+274        <receiver
+274-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\990d6f41072703fa727cf9fff511b567\transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+275            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+275-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\990d6f41072703fa727cf9fff511b567\transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+276            android:exported="false" />
+276-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\990d6f41072703fa727cf9fff511b567\transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+277    </application>
+278
+279</manifest>

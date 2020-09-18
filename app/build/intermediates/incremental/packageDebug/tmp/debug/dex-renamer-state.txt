@@ -1,0 +1,4 @@
+#Fri Sep 18 10:29:25 ICT 2020
+base.0=F\:\\FreelanceProjects\\20200915android\\com.spriv_20_6-14\\com.spriv\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

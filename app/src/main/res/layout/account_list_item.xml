@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/list_item_horizontal_margin"
+    android:paddingRight="@dimen/list_item_horizontal_margin" 
+    android:paddingBottom="@dimen/list_item_vertical_margin"
+    android:paddingTop="@dimen/list_item_vertical_margin">
+
+ <!-- ImageView
+     android:id="@+id/account_icon_image"
+     android:layout_width="48dp"
+	 android:layout_height="48dp"
+	 android:padding="12dp"
+     android:layout_alignParentLeft="true"
+     android:src="@drawable/lock_icon_small" /-->
+ 
+ <LinearLayout
+     android:id="@+id/actions_layout"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_alignParentRight="true">
+	 <Button
+	     android:id="@+id/account_totp_button"
+	     android:visibility="gone"
+	     android:layout_width="70dp"
+	     android:layout_height="wrap_content"
+	     android:textSize="@dimen/large_text_size"
+	     android:padding="4dp"
+	     android:text="@string/totp"/>
+	<ImageView
+	     android:id="@+id/account_remove_image"
+	     android:visibility="visible"
+	     android:layout_width="70dp"
+	     android:layout_height="44dp"
+	     android:padding="4dp"
+	     android:src="@drawable/ic_action_discard_red" />
+</LinearLayout>
+	<TextView 
+     android:id="@+id/account_name_text"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@android:color/transparent"
+     android:layout_toLeftOf="@id/actions_layout"
+     android:textColor="#444444"
+     android:layout_centerVertical="true"
+     android:textSize="@dimen/large_text_size"
+     android:text="ofirdalik@yahoo.com"/>
+</RelativeLayout>

@@ -1,0 +1,123 @@
+{
+  "project_info": {
+    "project_number": "690725115158",
+    "firebase_url": "https://spriv-adaptive-authentication.firebaseio.com",
+    "project_id": "spriv-adaptive-authentication",
+    "storage_bucket": "spriv-adaptive-authentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690725115158:android:7644ed2e86d97940",
+        "android_client_info": {
+          "package_name": "com.spriv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690725115158-tg8sq9h2tfhv9mgmlp026dj72cs3updh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spriv",
+            "certificate_hash": "f56b2d578856ca5f53730053d6f39bbba219d067"
+          }
+        },
+        {
+          "client_id": "690725115158-iudp5lktutk428figqj2a16df8074mnp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spriv",
+            "certificate_hash": "4ed79305efcb3e362b2983ba8a79602ba17c1407"
+          }
+        },
+        {
+          "client_id": "690725115158-q8bkds5vhqhs1duhgpbp8i6g6bo4hs2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0X7jVfP5GPmKKGwPG7IwMLKtwuxGVUi0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690725115158-qdllqkntgar3nrrbu222ks2lrs5njo9p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.spriv.app",
+                "app_store_id": "830482983"
+              }
+            },
+            {
+              "client_id": "690725115158-q8bkds5vhqhs1duhgpbp8i6g6bo4hs2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690725115158:android:89bd97971388e703",
+        "android_client_info": {
+          "package_name": "com.spriv.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690725115158-hlpsrg9qa93944n4t6sqivrmt7pdh26j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spriv.app",
+            "certificate_hash": "f56b2d578856ca5f53730053d6f39bbba219d067"
+          }
+        },
+        {
+          "client_id": "690725115158-q8bkds5vhqhs1duhgpbp8i6g6bo4hs2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0X7jVfP5GPmKKGwPG7IwMLKtwuxGVUi0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690725115158-qdllqkntgar3nrrbu222ks2lrs5njo9p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.spriv.app",
+                "app_store_id": "830482983"
+              }
+            },
+            {
+              "client_id": "690725115158-q8bkds5vhqhs1duhgpbp8i6g6bo4hs2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

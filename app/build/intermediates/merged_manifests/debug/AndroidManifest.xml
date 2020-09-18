@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spriv"
+    android:versionCode="24"
+    android:versionName="1.3.3" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="com.spriv.SprivApp"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:testOnly="true"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="com.spriv.activity.QRScannerActivity"
+            android:label="@string/scan_qr_add_user" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name="com.spriv.activity.BootstrapActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="spriv" />
+                <!-- data android:scheme="http" android:host="spriv.com" android:pathPrefix="/spriv" -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.spriv.activity.AccountsActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_none"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spriv.activity.WelcomeActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/welcome_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spriv.activity.PatentsActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/patents_title"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name="com.spriv.activity.AboutActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/about_title"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name="com.spriv.activity.AddAccountActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_activity_add_account"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name="com.spriv.activity.VisitWebActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_privacy_policy"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name="com.spriv.activity.CheckLoginActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_activity_check_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.spriv.activity.CheckVerificationActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_activity_check_verification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.spriv.activity.TOTPActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_activity_totp"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name="com.spriv.activity.LoginsActivity"
+            android:icon="@drawable/logo_icon_white"
+            android:label="@string/title_activity_auth_logins"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spriv.activity.AccountsActivity" />
+        </activity>
+        <activity
+            android:name="com.spriv.activity.TipsActivity"
+            android:label="@string/title_activity_tips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spriv.activity.NextStepsActivity"
+            android:label="@string/title_activity_next_steps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spriv.activity.Automatic2FAActivity"
+            android:label="@string/title_activity_automatic_2FA"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.spriv.firebase.MyFirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.spriv.service.ServiceNoDelay"
+            android:enabled="true" />
+        <service
+            android:name="com.spriv.service.GpsService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.spriv.service.SensorRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped" >
+            <intent-filter>
+                <action android:name="ac.in.ActivityRecognition.RestartSensor" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.spriv.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

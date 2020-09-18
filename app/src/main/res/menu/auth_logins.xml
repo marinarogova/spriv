@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:spriv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.spriv.AuthLoginsActivity" >
+
+    <item android:id="@+id/action_edit_logins"
+          android:icon="@drawable/ic_edit"
+          android:title="@string/action_edit_accounts" 
+          spriv:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_done"
+          android:icon="@drawable/ic_action_accept"
+          android:title="@string/action_done" 
+          spriv:showAsAction="ifRoom" />
+
+
+</menu>

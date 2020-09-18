@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.spriv.activity.WelcomeActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <!--  -->TextView
+        android:id="@+id/welcome_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_title"
+        android:textSize="@dimen/xxlarge_text_size"/-->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center_horizontal"
+            android:text="Welcome to Spriv!"
+            android:textSize="@dimen/xlarge_text_size"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:text="A safer online world."
+            android:textSize="@dimen/xlarge_text_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <ImageView
+        android:layout_width="93dp"
+        android:layout_height="79dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/lock_icon_small"
+        android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center_horizontal"
+            android:text="@string/welcome_marketing_title"
+            android:textSize="@dimen/xlarge_text_size"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+        android:id="@+id/welcome_marketing_content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_marketing_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="@dimen/large_text_size" 
+        android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Automagically! :-)"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/power_by_spriv_image"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/powered_by_spriv"/>
+    
+    <LinearLayout
+        android:id="@+id/get_started_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_above="@id/power_by_spriv_image"
+        android:background="#1EC436" >
+    <TextView
+        android:id="@+id/get_started_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="1 of 3 Next"
+        android:gravity="center"
+        android:textSize="@dimen/xlarge_text_size"
+        android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</RelativeLayout>
